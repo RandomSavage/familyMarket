@@ -61,3 +61,7 @@ Route::get('/admin/general-categories/{id}/edit', 'admin\GeneralCategoriesContro
 Route::put('/admin/general-categories/{id}', 'admin\GeneralCategoriesController@update')->middleware('role:Admin');
 
 Route::delete('/admin/general-categories/{id}/delete', 'admin\GeneralCategoriesController@delete')->middleware('role:Admin');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
