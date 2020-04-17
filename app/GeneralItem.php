@@ -1,0 +1,19 @@
+<?php
+
+namespace App;
+
+use Illuminate\Database\Eloquent\Model;
+
+class GeneralItem extends Model {
+
+  protected $table = 'general_items';
+
+  protected $fillable = [
+    'title', 'description', 'image_url', 'price', 'category_id'
+  ];
+
+  public function categories() {
+    return $this->belongsTo('App\GeneralCategory');
+  }
+
+}
