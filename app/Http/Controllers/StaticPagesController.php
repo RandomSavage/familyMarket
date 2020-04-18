@@ -11,4 +11,15 @@ class StaticPagesController extends Controller {
 
   return view('welcome');
   }
+
+  public function singleCategory($slug) {
+    $generalCategory = GeneralCategory::where('title', '=', $slug)->first();
+    $generalItems = GeneralItem::where('category_id', '=', $generalCategory->id)->get();
+
+    return view('inventory/single-category', [
+      "generalItem" => ucfirst($slug),
+       "generalItems" => $generalItems
+    ]);
+    
+  }
 }

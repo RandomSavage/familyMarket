@@ -6,13 +6,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class GeneralCategory extends Model {
 
-  protected $table = 'food_categories';
+  protected $table = 'general_categories';
 
     protected $fillable = [
       'title', 'description', 'image_url'
     ];
 
-    public function food_items() {
-      return $this->hasMany('App\FoodItem', 'category_id');
+    public function general_items() {
+      return $this->hasMany('App\GeneralItem', 'category_id');
     }
 }

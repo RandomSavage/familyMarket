@@ -44,6 +44,8 @@ Route::get('/menu', 'StaticPagesController@menu');
 
 Route::get('/menu/{slug}', 'StaticPagesController@singleMenu');
 
+Route::get('/inventory/{slug}', 'StaticPagesController@singleCategory');
+
 //Contact-form
 Route::get('/contact-form', 'ContactFormController@create');
 

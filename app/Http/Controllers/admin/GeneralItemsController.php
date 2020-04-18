@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\GeneralItem;
+use App\GeneralCategory;
 
 class GeneralItemsController extends Controller {
 
@@ -19,7 +21,7 @@ class GeneralItemsController extends Controller {
     }
 
     public function create() {
-      $categories = FoodCategory::All();
+      $categories = GeneralCategory::All();
       return view('admin/general-items/create', [
         'categories' => $categories
       ]);
@@ -46,7 +48,7 @@ class GeneralItemsController extends Controller {
 
     public function edit($id) {
       $item = GeneralItem::find($id);
-      $categories = FoodCategory::All();
+      $categories = GeneralCategory::All();
       return view('admin/general-items/edit', [
         'item' => $item,
         'categories' => $categories
