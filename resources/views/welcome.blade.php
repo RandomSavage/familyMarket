@@ -25,8 +25,8 @@
                 <div class="dropdown-content">
                   <a href="#">Vegetables</a>
                   <a href="#">Local Honey and Jams</a>
-                  <a href="#">Local Dairy</a>
-                  <a href="#">Local Meat</a>
+                  <a href="/inventory/local-dairy">Local Dairy</a>
+                  <a href="/inventory/meat">Local Meat</a>
                   <a href="#">Drinks</a>
                   <a href="#">Breakfast</a>
                 </div>

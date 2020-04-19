@@ -1,3 +1,6 @@
+@extends('includes.head')
+
+@include('includes.header')
 
   <div id="single-menu-page">
     <div class="row">
@@ -5,7 +8,7 @@
       offset-md-1 col-md-10
       offset-lg-2 col-lg-8">
         <div class="content-box">
-          <div class="row">
+          <div class="row bg">
             <div class="col-md-12">
               <h1>{{$generalItem}}</h1>
             </div>
@@ -25,7 +28,7 @@
                 <div class="item">
                   <div class="title">
                     <h4>{{$item->title}}</h4>
-                    <span class="price">lalalalal{{$item->price}}</span>
+                    <span class="price">{{$item->price}}</span>
                   </div>
                   <div class="description">
                     <p>{{$item->description}}</p>
