@@ -207,7 +207,7 @@ body {
 
 #services {
   padding: 80px 15px;
-  background: #b0bf1a;
+  background: black;
 }
 
 #services .title {
@@ -216,19 +216,36 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
+  margin: 10px auto 50px;
   width: 200px;
   height: 200px;
   letter-spacing: 4px;
+  background: url("/../../public/img/fmSign.jpg");
 }
 
 #services .title .circle {
   position: absolute;
   top: 23;
   border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  background-color: rgba(90, 90, 90, 0.5);
+  width: 300px;
+  height: 300px;
+}
+
+#services .title .square {
+  background: white;
+}
+
+#services .title .circle .circ-img {
+  height: 300px;
+  width: 300px;
+  border: 5px solid white;
+  border-radius: 50%;
+}
+
+#services .title .circle .circ-img img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
 }
 
 #services .title h1 {
@@ -237,7 +254,7 @@ body {
   font-size: 2.5rem;
   text-transform: uppercase;
   font-weight: 700;
-  color: #16171b;
+  color: white;
 }
 
 #services .services-container {
@@ -248,14 +265,15 @@ body {
 }
 
 #services .services-container .box {
-  background: rgba(255, 255, 255, 0);
-  transition: all 0.4s ease-in-out;
+  background: white;
+  border-radius: 5px;
+  transition: all 0.8s ease-in-out;
   padding: 40px;
   cursor: pointer;
 }
 
 #services .services-container .box:hover {
-  background: #1a1500;
+  background: #b0bf1a;
   box-shadow: 0px 41px 74px 24px rgba(0, 0, 0, 0.08);
   color: white;
 }
@@ -266,8 +284,10 @@ body {
 }
 
 #services .services-container .box h5 {
-  font-size: 0.9rem;
+  font-family: "Courgette", cursive;
+  font-size: 1.8rem;
   font-weight: 700;
+  text-align: center;
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-bottom: 2rem;
@@ -276,7 +296,8 @@ body {
 #services .services-container .box p {
   color: black;
   line-height: 1.5;
-  font-size: 0.8rem;
+  font-size: 1rem;
+  text-align: center;
 }
 
 #services .services-container .box:hover p {
@@ -307,6 +328,431 @@ body {
 }
 
 /*phones*/
+
+#portfolio-projects {
+  padding: 100px 15px;
+  background: black;
+}
+
+#portfolio-projects .project-image .img {
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  border-radius: 5px;
+}
+
+#portfolio-projects h1 {
+  font-size: 4rem;
+  font-weight: 600;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+
+#portfolio-projects .info .buttons {
+  margin: 20px 0;
+}
+
+#portfolio-projects .info .buttons a {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 3px;
+  color: #fff;
+  background: black;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.3s ease-in-out;
+}
+
+#portfolio-projects .info .buttons .fa {
+  color: #ff5253;
+  padding-right: 10px;
+}
+
+#portfolio-projects .info .buttons a:hover {
+  background: #ff5253;
+}
+
+#portfolio-projects .info .buttons a:hover .fa {
+  color: #000;
+}
+
+#portfolio-projects p {
+  display: inline-block;
+  border-radius: 3px;
+  color: #929294;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  margin-bottom: 1.8rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#portfolio-projects h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+#portfolio-projects .technologies .icons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  align-items: center;
+  justify-items: center;
+}
+
+#portfolio-projects .technologies .icons .icon img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 5px;
+}
+
+#portfolio-projects .video {
+  text-align: center;
+}
+
+#portfolio-projects .container .project-image {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+#portfolio-projects .container .project-image .img {
+  height: 450px;
+  width: 100%;
+  background-size: cover !important;
+  background-position: top center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+  border-radius: 5px;
+}
+
+/*phones*/
+
+@media only screen and (max-width: 767px) {
+  #portfolio-projects .info .buttons {
+    text-align: center;
+  }
+
+  #portfolio-projects .info .buttons a {
+    display: grid;
+    margin-bottom: 10px;
+  }
+
+  #portfolio-projects .info .buttons {
+    display: inline-block;
+    justify-content: center;
+    margin: 20px;
+  }
+
+  #portfolio-projects h1 {
+    font-size: 2.8rem;
+  }
+
+  #portfolio-projects .technologies .icons {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #portfolio-projects .video iframe {
+    width: 100%;
+  }
+
+  #portfolio-projects p {
+    font-size: 0.8rem;
+  }
+}
+
+footer {
+  background: black;
+  padding: 100px 15px;
+  margin-top: 50px;
+}
+
+footer .social-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+  align-items: center;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+footer .social-container a {
+  font-size: 3rem;
+  color: #8e8f91;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+}
+
+footer .social-container a:hover {
+  color: #b0bf1a;
+}
+
+footer h5 {
+  font-size: 1rem;
+  color: #8e8f91;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 20px 0;
+}
+
+footer h6 {
+  font-size: 0.8rem;
+  color: #8e8f91;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+/*phones*/
+
+#portfolio-section {
+  padding: 80px 15px;
+}
+
+#portfolio-section .title {
+  font-size: 2.5rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  letter-spacing: 4px;
+}
+
+#portfolio-section .title .square {
+  position: absolute;
+  top: 23;
+  width: 150px;
+  height: 150px;
+  background-color: rgba(103, 103, 103, 0.5);
+}
+
+#portfolio-section .title h1 {
+  position: relative;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #16171b;
+}
+
+#portfolio-section .portfolio-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 150px 150px 150px 150px 150px;
+  grid-gap: 5px;
+  width: 100%;
+  background: white;
+  border: 5px solid white;
+  border-radius: 5px;
+}
+
+#portfolio-section .portfolio-container .box {
+  background: black;
+  display: block;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+  width: 100%;
+  text-decoration: line-through;
+  color: white;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+
+/*box locations*/
+
+#portfolio-section .portfolio-container .box.image1 {
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+
+#portfolio-section .portfolio-container .box.image1 .image {
+  background: url("/img/storeFront.jpg");
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: 0 45%;
+  background-repeat: no-repeat;
+}
+
+#portfolio-section .portfolio-container .box.image2 {
+  grid-column: 3/4;
+  grid-row: 1/4;
+}
+
+#portfolio-section .portfolio-container .box.image2 .image {
+  background: url("/img/gifts.jpg");
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#portfolio-section .portfolio-container .box.image3 {
+  grid-column: 1/2;
+  grid-row: 2/4;
+}
+
+#portfolio-section .portfolio-container .box.image3 .image {
+  background: url("/img/baskets.jpg");
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#portfolio-section .portfolio-container .box.image4 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+#portfolio-section .portfolio-container .box.image4 .image {
+  background: url("/img/nuts.jpg");
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#portfolio-section .portfolio-container .box.image5 {
+  grid-column: 1/2;
+  grid-row: 4/6;
+}
+
+#portfolio-section .portfolio-container .box.image5 .image {
+  background: url("/img/rose.jpg");
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#portfolio-section .portfolio-container .box.image6 {
+  grid-column: 2/3;
+  grid-row: 3/6;
+}
+
+#portfolio-section .portfolio-container .box.image6 .image {
+  background: url("/img/drinks.jpg");
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: 0 50%;
+  background-repeat: no-repeat;
+}
+
+#portfolio-section .portfolio-container .box.image7 {
+  grid-column: 3/4;
+  grid-row: 4/6;
+}
+
+#portfolio-section .portfolio-container .box.image7 .image {
+  background: url("/img/flowers.jpg");
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 960px) {
+  #portfolio-section .portfolio-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px 150px 150px 150px 150px 150px 150px 150px;
+    grid-gap: 10px;
+    width: 100%;
+  }
+
+  #portfolio-section .portfolio-container .box.image1 {
+    grid-column: 1/2;
+    grid-row: 1/3;
+  }
+
+  #portfolio-section .portfolio-container .box.image2 {
+    grid-column: 2/3;
+    grid-row: 1/3;
+  }
+
+  #portfolio-section .portfolio-container .box.image3 {
+    grid-column: 1/2;
+    grid-row: 3/5;
+  }
+
+  #portfolio-section .portfolio-container .box.image4 {
+    grid-column: 2/3;
+    grid-row: 3/5;
+  }
+
+  #portfolio-section .portfolio-container .box.image5 {
+    grid-column: 1/2;
+    grid-row: 5/7;
+  }
+
+  #portfolio-section .portfolio-container .box.image6 {
+    grid-column: 2/3;
+    grid-row: 5/7;
+  }
+
+  #portfolio-section .portfolio-container .box.image7 {
+    grid-column: 1/2;
+    grid-row: 7/9;
+  }
+}
+
+/*phones*/
+
+@media only screen and (max-width: 767px) {
+  #portfolio-section .portfolio-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px 150px 150px 150px 150px 150px 150px;
+    grid-gap: 10px;
+    width: 100%;
+  }
+
+  #portfolio-section .portfolio-container .box.image1 {
+    grid-column: 1/4;
+    grid-row: 1/2;
+  }
+
+  #portfolio-section .portfolio-container .box.image2 {
+    grid-column: 1/4;
+    grid-row: 2/3;
+  }
+
+  #portfolio-section .portfolio-container .box.image3 {
+    grid-column: 1/4;
+    grid-row: 3/4;
+  }
+
+  #portfolio-section .portfolio-container .box.image4 {
+    grid-column: 1/4;
+    grid-row: 4/5;
+  }
+
+  #portfolio-section .portfolio-container .box.image5 {
+    grid-column: 1/4;
+    grid-row: 5/6;
+  }
+
+  #portfolio-section .portfolio-container .box.image6 {
+    grid-column: 1/4;
+    grid-row: 6/7;
+  }
+
+  #portfolio-section .portfolio-container .box.image7 {
+    grid-column: 1/4;
+    grid-row: 7/8;
+  }
+}
 
 body {
   font-family: Roboto, sans-serif;

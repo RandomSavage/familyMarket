@@ -1,0 +1,124 @@
+#portfolio-projects{
+  padding: 100px 15px;
+  background: black;
+}
+#portfolio-projects .project-image .img{
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  border-radius: 5px;
+}
+#portfolio-projects h1{
+  font-size: 4rem;
+  font-weight: 600;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+#portfolio-projects .info .buttons{
+  margin: 20px 0;
+}
+#portfolio-projects .info .buttons a{
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 3px;
+  color: #fff;
+  background: black;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all .3s ease-in-out;
+}
+#portfolio-projects .info .buttons .fa{
+  color: #ff5253;
+  padding-right: 10px;
+}
+#portfolio-projects .info .buttons a:hover{
+  background: #ff5253;
+}
+#portfolio-projects .info .buttons a:hover .fa{
+  color: #000;
+}
+#portfolio-projects p{
+  display: inline-block;
+  border-radius: 3px;
+  color: #929294;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  margin-bottom: 1.8rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#portfolio-projects .technologies{
+  
+}
+#portfolio-projects h3{
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 2rem 0;
+  text-align: center;
+}
+#portfolio-projects .technologies .icons{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  align-items: center;
+  justify-items: center;
+}
+#portfolio-projects .technologies .icons .icon{
+
+}
+#portfolio-projects .technologies .icons .icon img{
+  width: 100%;
+  max-width: 200px;
+  border-radius: 5px;
+}
+#portfolio-projects .video{
+  text-align: center;
+}
+
+#portfolio-projects .container .project-image{
+    width: 100%;
+    margin-bottom: 3rem;
+}
+#portfolio-projects .container .project-image .img{
+  height: 450px;
+  width: 100%;
+  background-size: cover !important;
+  background-position: top center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 960px){
+
+}
+/*phones*/
+@media only screen and (max-width: 767px){
+  #portfolio-projects .info .buttons{
+    text-align: center;
+  }
+  #portfolio-projects .info .buttons a{
+    display: grid;
+    margin-bottom: 10px;
+  }
+  #portfolio-projects .info .buttons{
+    display: inline-block;
+    justify-content: center;
+    margin: 20px;
+  }
+  #portfolio-projects h1{
+    font-size: 2.8rem;
+  }
+  #portfolio-projects .technologies .icons{
+    grid-template-columns: 1fr 1fr;
+  }
+  #portfolio-projects .video iframe{
+    width: 100%;
+  }
+  #portfolio-projects p{
+    font-size: .8rem;
+
+  }
+}
