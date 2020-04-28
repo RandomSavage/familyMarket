@@ -28,6 +28,9 @@
                 <div class="item">
                   <div class="title">
                     <h4>{{$item->title}}</h4>
+                    <div class="item-img">
+                      <img src="{{$item->image_url}}" alt="item">
+                    </div>
                     <span class="price">{{$item->price}}</span>
                   </div>
                   <div class="description">

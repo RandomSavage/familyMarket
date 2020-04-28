@@ -150,12 +150,13 @@ table {
 }
 
 body {
-  font-family: Roboto, sans-serif;
+  font-family: "Courgette", cursive;
+  background: white;
 }
 
 #single-menu-page {
   padding: 100px;
-  background: #1a1500;
+  background: white;
 }
 
 #single-menu-page .bg {
@@ -163,6 +164,7 @@ body {
 }
 
 #single-menu-page h1 {
+  font-family: "Courgette", cursive;
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 2rem;
@@ -185,6 +187,16 @@ body {
   font-size: 1.4rem;
   color: white;
   font-weight: 900;
+}
+
+#single-menu-page .title .item-img {
+  height: 100px;
+  width: 100px;
+}
+
+#single-menu-page .title .item-img img {
+  height: 100%;
+  width: 100%;
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
@@ -757,6 +769,7 @@ footer h6 {
 body {
   font-family: Roboto, sans-serif;
   background: #1a1500;
+  background: white;
 }
 
 header {
@@ -838,14 +851,15 @@ header {
 
 .dropdown-content {
   display: none;
-  position: fixed;
   background: rgba(26, 21, 0, 0.9);
   /* background-color: rgb(168,228,160); */
   /* min-width: 160px; */
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  position: absolute;
   z-index: 9;
   /* margin-right: 20px; */
   border: 1px solid white;
+  margin-bottom: 100px;
 }
 
 /* Links inside the dropdown */
@@ -860,13 +874,13 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition: all 0.8s ease-in-out;
 }
 
 /* Add a grey background color to dropdown links on hover */
 
 .dropdown-content a:hover {
   background-color: black;
-  z-index: 9;
 }
 
 /* Show the dropdown menu on hover */

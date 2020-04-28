@@ -1,14 +1,16 @@
 body{
-  font-family: Roboto, sans-serif;
+  font-family: 'Courgette', cursive;
+  background: white;
 
 }
 #single-menu-page{
   padding: 100px;
-  background: rgba(26,21,0,1);
+  background: white;
   .bg{
     background: black;
   }
   h1{
+    font-family: 'Courgette', cursive;
     font-size: 3rem;
     font-weight: 700;
     margin-bottom: 2rem;
@@ -27,6 +29,14 @@ body{
       font-size: 1.4rem;
       color: white;
       font-weight: 900;
+    }
+    .item-img{
+      height: 100px;
+      width: 100px;
+      img{
+        height: 100%;
+        width: 100%;
+      }
     }
   }
 }
