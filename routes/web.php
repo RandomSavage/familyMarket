@@ -51,18 +51,21 @@ Route::get('/contact-form', 'ContactFormController@create');
 
 Route::post('/contact-form', 'ContactFormController@store');
 
+//Admin Dashboard
+Route::get('/admin', 'admin\AdminController@dashboard');
+
 //Admin General Categories
-Route::get('/admin/general-categories', 'admin\GeneralCategoriesController@index')->middleware('role:Admin');
+Route::get('/admin/general-categories', 'admin\GeneralCategoriesController@index');
 
-Route::get('/admin/general-categories/create', 'admin\GeneralCategoriesController@create')->middleware('role:Admin');
+Route::get('/admin/general-categories/create', 'admin\GeneralCategoriesController@create');
 
-Route::post('/admin/general-categories', 'admin\GeneralCategoriesController@store')->middleware('role:Admin');
+Route::post('/admin/general-categories', 'admin\GeneralCategoriesController@store');
 
-Route::get('/admin/general-categories/{id}/edit', 'admin\GeneralCategoriesController@edit')->middleware('role:Admin');
+Route::get('/admin/general-categories/{id}/edit', 'admin\GeneralCategoriesController@edit');
 
-Route::put('/admin/general-categories/{id}', 'admin\GeneralCategoriesController@update')->middleware('role:Admin');
+Route::put('/admin/general-categories/{id}', 'admin\GeneralCategoriesController@update');
 
-Route::delete('/admin/general-categories/{id}/delete', 'admin\GeneralCategoriesController@delete')->middleware('role:Admin');
+Route::delete('/admin/general-categories/{id}/delete', 'admin\GeneralCategoriesController@delete');
 
 Auth::routes();
 
