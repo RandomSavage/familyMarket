@@ -34,7 +34,7 @@
                         <div class="card">
                             <h5 class="card-header">Edit General Category</h5>
                             <div class="card-body">
-                              <form method="POST" action="/admin/General-categories/{{$category->id}}">
+                              <form method="POST" action="/admin/general-categories/{{$category->id}}">
                                     @csrf
                                     @method('PUT')
                                     <div class="form-group">

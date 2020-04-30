@@ -21,32 +21,32 @@
                 </li>
                 @if (Auth::user()->isAdmin())
                 <li class="nav-item">
-                    <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-2" aria-controls="submenu-2"><i class="fa fa-fw fa-rocket"></i>Menu</a>
+                    <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-2" aria-controls="submenu-2"><i class="fa fa-fw fa-rocket"></i>Inventory</a>
                     <div id="submenu-2" class="collapse submenu" style="">
                         <ul class="nav flex-column">
                           <!-- begin of pasted li -->
                           <li class="nav-item">
-                              <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-1-1" aria-controls="submenu-1-1">Food Categories</a>
+                              <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-1-1" aria-controls="submenu-1-1">General Categories</a>
                               <div id="submenu-1-1" class="collapse submenu" style="">
                                   <ul class="nav flex-column">
                                     <li class="nav-item">
-                                        <a class="nav-link" href="/admin/food-categories"> All Food Categories<span class="badge badge-secondary">New</span></a>
+                                        <a class="nav-link" href="/admin/general-categories"> All General Categories<span class="badge badge-secondary">New</span></a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="/admin/food-categories/create"> New Food Category<span class="badge badge-secondary">New</span></a>
+                                        <a class="nav-link" href="/admin/general-categories/create"> New General Category<span class="badge badge-secondary">New</span></a>
                                     </li>
                                   </ul>
                               <!-- </div> -->
                           </li>
                           <li class="nav-item">
-                              <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-2-1" aria-controls="submenu-2-1">Food Items</a>
+                              <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-2-1" aria-controls="submenu-2-1">General Items</a>
                               <div id="submenu-2-1" class="collapse submenu" style="">
                                   <ul class="nav flex-column">
                                     <li class="nav-item">
-                                        <a class="nav-link" href="/admin/food-items"> All Food Items<span class="badge badge-secondary">New</span></a>
+                                        <a class="nav-link" href="/admin/general-items"> All General Items<span class="badge badge-secondary">New</span></a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="/admin/food-items/create">New Food Item<span class="badge badge-secondary">New</span></a>
+                                        <a class="nav-link" href="/admin/general-items/create">New General Item<span class="badge badge-secondary">New</span></a>
                                     </li>
                                   </ul>
                               </div>
@@ -56,38 +56,6 @@
                     </div>
                 </li>
                 @endif
-                <li class="nav-item">
-                    <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-3" aria-controls="submenu-3"><i class="fa fa-fw fa-rocket"></i>Customers</a>
-                    <div id="submenu-3" class="collapse submenu" style="">
-                        <ul class="nav flex-column">//
-                          <li class="nav-item">
-                              <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-3-1" aria-controls="submenu-3-1">Offer Members</a>
-                              <div id="submenu-3-1" class="collapse submenu" style="">
-                                  <ul class="nav flex-column">
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="/admin/members">All Members<span class="badge badge-secondary">New</span></a>
-                                    </li>
-                                  </ul>
-                              </div>
-                          </li>
-                          <li class="nav-item">
-                              <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-3-2" aria-controls="submenu-3-2">Reservations</a>
-                              <div id="submenu-3-2" class="collapse submenu" style="">
-                                  <ul class="nav flex-column">
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="/admin/reservations">All Reservations<span class="badge badge-secondary">New</span></a>
-                                        <a class="nav-link" href="/admin/reservations/1/edit">Edit Reservations<span class="badge badge-secondary">New</span></a>
-                                        <a class="nav-link" href="/admin/reservations">New Reservations<span class="badge badge-secondary">New</span></a>
-                                    </li>
-                                  </ul>
-                              </div>
-                          </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/admin/reservations">Reservations<span class="badge badge-secondary">New</span></a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
                 @if (Auth::user()->isAdmin())
                 <li class="nav-item">
                     <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-4" aria-controls="submenu-4"><i class="fa fa-fw fa-rocket"></i>Users</a>

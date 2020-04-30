@@ -39,7 +39,7 @@
           </div>
         </li>
         <li>
-          <a href="#">About</a>
+          <a href="/contact">Contact</a>
         </li>
       </ul>
     </div>

@@ -20,6 +20,10 @@ class StaticPagesController extends Controller {
       "generalItem" => ucfirst($slug),
        "generalItems" => $generalItems
     ]);
-    
+
   }
+
+    public function contact() {
+     return view('pages/contact');
+   }
 }

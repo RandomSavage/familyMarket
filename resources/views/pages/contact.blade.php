@@ -1,14 +1,4 @@
-@extends('layouts.app')
-
-@section('title')
-Contact - {{$settings["general"]->site_title}}
-@endsection
-
-@section('description')
-Billy Burgers would like to hear feedback from you.
-@endsection
-
-@section('content')
+@include('includes.head')
   <div id="contact-page">
     <div class="content-box">
       <div class="row">
@@ -35,4 +25,3 @@ Billy Burgers would like to hear feedback from you.
       </div>
     </div>
   </div>
-@endsection
