@@ -207,6 +207,10 @@ body {
   #single-menu-page {
     padding: 20px;
   }
+
+  #single-menu-page .content-box .row {
+    margin-top: 0px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
