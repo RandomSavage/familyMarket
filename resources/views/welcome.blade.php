@@ -13,6 +13,7 @@
     </head>
     <body>
       @include('includes.header')
+      @include('includes.mobile-nav')
       <section id="app-layout">
         <div class="welcome-jumbo">
           <div class="greeting">
@@ -25,5 +26,28 @@
       @include('includes.about')
       @include('includes.services')
       @include('includes.footer')
+      <script>
+      function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+      </script>
+      <script type="text/javascript">
+      function navFunction() {
+        var navLinks = document.getElementsByClassName("subnav-content");
+        console.log(navLinks);
+        for(var i = 0; i < navLinks.length; i++)
+        if (navLinks[i].style.display === "block") {
+          navLinks[i].style.display = "none";
+        } else {
+          navLinks[i].style.display = "block";
+        }
+      }
+      </script>
+
     </body>
 </html>
