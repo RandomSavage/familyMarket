@@ -857,17 +857,23 @@ footer h6 {
   color: white;
 }
 
+.subnav {
+  height: 100vh;
+}
+
 .subnav-content {
   display: none;
   position: absolute;
   left: 0;
   background-color: red;
+  height: 100vh;
   width: 100%;
   z-index: 1;
 }
 
 .subnav-content a {
-  float: left;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   color: white;
   text-decoration: none;
 }
@@ -875,6 +881,28 @@ footer h6 {
 .subnav-content a:hover {
   background-color: #eee;
   color: black;
+}
+
+.nav-item-1 {
+  background: red;
+}
+
+.nav-item-2 {
+  background: rebeccapurple;
+}
+
+.nav-item-3 {
+  background: green;
+  display: none;
+}
+
+.myLinks #main-drop {
+  color: red;
+}
+
+.myLinks .nav li {
+  display: flex;
+  flex-direction: column;
 }
 
 body {

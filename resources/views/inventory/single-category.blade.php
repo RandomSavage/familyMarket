@@ -1,7 +1,9 @@
 @extends('includes.head')
 
 @include('includes.header')
+@include('includes.mobile-nav')
 
+  <script src="/resources/js/mobNav.js"></script>
   <div id="single-menu-page">
     <div class="row">
       <div class="col-sm-12
@@ -44,4 +46,5 @@
       </div>
     </div>
     @include('includes.footer')
+
   </div>
