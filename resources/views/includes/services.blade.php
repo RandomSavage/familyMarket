@@ -71,7 +71,7 @@
          <div class="image">
            <div class="hover-bg">
              <div class="title">
-               
+
              </div>
            </div>
          </div>
@@ -80,18 +80,18 @@
    </div>
  </section>
       <div class="services-container">
-        <div class="box blue">
-          <h5>Market</h5>
-          <p>Local Meats, Dairy, Produce, Deli</p>
-        </div>
-        <div class="box red">
-          <h5>General Store</h5>
-          <p>Gifts, Crafts</p>
-        </div>
-        <div class="box orange">
-          <h5>Feed Store</h5>
-          <p>Animal Feed And Supplements</p>
-        </div>
+          <div class="box blue">
+            <h5>Market</h5>
+            <p>Local Meats, Dairy, Produce, Deli</p>
+          </div>
+          <div class="box red">
+            <h5>General Store</h5>
+            <p>Gifts, Crafts</p>
+          </div>
+          <div class="box orange">
+            <h5>Feed Store</h5>
+            <p>Animal Feed And Supplements</p>
+          </div>      
       </div>
     </div>
   </section>
