@@ -896,6 +896,11 @@ footer h6 {
   display: none;
 }
 
+.nav-item-4 {
+  background: #FF5533;
+  display: none;
+}
+
 .myLinks #main-drop {
   color: red;
 }
@@ -1040,6 +1045,7 @@ header {
 
 .welcome-jumbo {
   max-width: 100vw;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;

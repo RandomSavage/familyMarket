@@ -1,4 +1,4 @@
-
+@extends('includes.head')
 <header>
   <div class="header-container">
     <div class="logo">

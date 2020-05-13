@@ -3,8 +3,9 @@
 @include('includes.header')
 @include('includes.mobile-nav')
 
-  <script src="/resources/js/mobNav.js"></script>
+
   <div id="single-menu-page">
+    @stack('scripts')
     <div class="row">
       <div class="col-sm-12
       offset-md-1 col-md-10
@@ -36,7 +37,7 @@
                     <span class="price">{{$item->price}}</span>
                   </div>
                   <div class="description">
-                    <p>{{$item->description}}</p>
+                    <p>{{$item->gitdescription}}</p>
                   </div>
                 </div>
               </div>

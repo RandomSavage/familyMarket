@@ -1,4 +1,4 @@
-window.onload = function {
+
   function myFunction() {
     var x = document.getElementById("myLinks");
     if (x.style.display === "block") {
@@ -43,4 +43,3 @@ window.onload = function {
       navItems3[i].style.flexDirection = "column";
     }
   }
-}

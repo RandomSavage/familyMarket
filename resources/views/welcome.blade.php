@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>Family Market</title>
+        @stack('head')
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <link rel="stylesheet" href="/css/app.css">
         <!-- Fonts -->
@@ -73,7 +74,20 @@
           navItems3[i].style.flexDirection = "column";
         }
       }
+      function navFunctionIV() {
+        // var navLinks = document.getElementsByClassName("subnav-content");
+        var navItems4 = document.getElementsByClassName("nav-item-4");
+        console.log(navItems4);
+        for(var i = 0; i < navItems4.length; i++)
+        if (navItems4[i].style.display === "flex" && navItems4[i].style.flexDirection === "column") {
+          navItems3[i].style.display = "none";
+        } else {
+          navItems4[i].style.display = "flex";
+          navItems4[i].style.flexDirection = "column";
+        }
+      }
       </script>
+
 
     </body>
 </html>
